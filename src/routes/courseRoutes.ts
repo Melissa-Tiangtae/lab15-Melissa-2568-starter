@@ -20,7 +20,7 @@ const handleError = (res: Response, err: unknown) => {
 
 router.get("/students", (req: Request, res: Response) => {
     try {
-        // เพิ่ม .map(student => student) ตามไฟล์ที่ถูกต้อง
+      
         return res.status(200).json({
             success: true,
             data: students.map((student) => student),
